@@ -13,6 +13,7 @@
 		09F366F3289C44D6009779EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F366F1289C44D6009779EF /* Main.storyboard */; };
 		09F366F5289C44DC009779EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F366F4289C44DC009779EF /* Assets.xcassets */; };
 		09F366F8289C44DC009779EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F366F6289C44DC009779EF /* LaunchScreen.storyboard */; };
+		09F36712289C4F51009779EF /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 09F36711289C4F51009779EF /* SpringAnimation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +28,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		09F366E5289C44D6009779EF /* Frameworks */ = {
+		09F3670F289C4F06009779EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F36712289C4F51009779EF /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,14 +77,18 @@
 			buildConfigurationList = 09F366FC289C44DC009779EF /* Build configuration list for PBXNativeTarget "AnimationsApp" */;
 			buildPhases = (
 				09F366E4289C44D6009779EF /* Sources */,
-				09F366E5289C44D6009779EF /* Frameworks */,
 				09F366E6289C44D6009779EF /* Resources */,
+				09F3670F289C4F06009779EF /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = AnimationsApp;
+			packageProductDependencies = (
+				09F3670E289C4E9F009779EF /* SpringAnimation */,
+				09F36711289C4F51009779EF /* SpringAnimation */,
+			);
 			productName = AnimationsApp;
 			productReference = 09F366E8289C44D6009779EF /* AnimationsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +117,10 @@
 				Base,
 			);
 			mainGroup = 09F366DF289C44D6009779EF;
+			packageReferences = (
+				09F3670D289C4E9F009779EF /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+				09F36710289C4F51009779EF /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 09F366E9289C44D6009779EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,7 +314,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +368,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09F3670D289C4E9F009779EF /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+		09F36710289C4F51009779EF /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09F3670E289C4E9F009779EF /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F3670D289C4E9F009779EF /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+		09F36711289C4F51009779EF /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F3670D289C4E9F009779EF /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09F366E0289C44D6009779EF /* Project object */;
 }
