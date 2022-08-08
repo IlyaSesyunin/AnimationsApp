@@ -10,59 +10,30 @@ import SpringAnimation
 
 class ViewController: UIViewController {
 
-    @IBOutlet var springAnimationView: SpringView!
-    
-    @IBOutlet var presetLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var delayLabel: UILabel!
-    
-    @IBOutlet var startButton: SpringButton!
-    
-    private var randomAnimation = AnimationPreset.allCases.randomElement()!.rawValue
-    private var randomCurve = AnimationCurve.allCases.randomElement()!.rawValue
-    private var randomForce = CGFloat.random(in: 0...2)
-    private var randomDuration = CGFloat.random(in: 0...2)
-    private var randomDelay = CGFloat.random(in: 0...2)
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupLabels()
-    }
-
-    @IBAction func startSpringAnimation(_ sender: SpringButton) {
-        setupAnimation()
-        setupNextRandomAnimation()
+    // MARK: - IB Outlets
+    @IBOutlet var animationView: SpringView!
+    @IBOutlet var animationLabel: UILabel! {
+        didSet {
+            animationLabel.text = animation.description
+        }
     }
     
-    private func setupAnimation() {
-        springAnimationView.animation = randomAnimation
-        springAnimationView.curve = randomCurve
-        springAnimationView.force = randomForce
-        springAnimationView.duration = randomDuration
-        springAnimationView.delay = randomDelay
-        springAnimationView.animate()
+    // MARK: - Private propeties
+    private var animation = Animation.getRandomAnimation()
+    
+    // MARK: - IB Actions
+    @IBAction func animationButtonPressed(_ sender: UIButton) {
+        animationLabel.text = animation.description
         
-        setupLabels()
-    }
-    
-    private func setupNextRandomAnimation() {
-        randomAnimation = AnimationPreset.allCases.randomElement()!.rawValue
-        randomCurve = AnimationCurve.allCases.randomElement()!.rawValue
-        randomForce = CGFloat.random(in: 0...2)
-        randomDuration = CGFloat.random(in: 0...2)
-        randomDelay = CGFloat.random(in: 0...2)
+        animationView.animation = animation.name
+        animationView.force = animation.force
+        animationView.duration = animation.duration
+        animationView.delay = animation.delay
+        animationView.curve = animation.curve
+        animationView.animate()
         
-        startButton.setTitle("Run \(randomAnimation)", for: .normal)
-    }
-    
-    private func setupLabels() {
-        presetLabel.text = "Preset: \(randomAnimation)"
-        curveLabel.text = "Curve: \(randomCurve)"
-        forceLabel.text = "Force: " + String(format: "%0.2f", randomForce)
-        durationLabel.text = "Duration: " + String(format: "%0.2f", randomDuration)
-        delayLabel.text = "Duration: " + String(format: "%0.2f", randomDelay)
+        animation = Animation.getRandomAnimation()
+        sender.setTitle("Run \(animation.name)", for: .normal)
     }
 }
 

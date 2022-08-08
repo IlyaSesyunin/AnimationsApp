@@ -19,48 +19,19 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIM-WZ-2p4" customClass="SpringView" customModule="SpringAnimation">
                                 <rect key="frame" x="50" y="100" width="220" height="114"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="xhh-xV-JwA">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="f4J-jq-dBe">
                                         <rect key="frame" x="8" y="8" width="204" height="98"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4J-jq-dBe">
-                                                <rect key="frame" x="0.0" y="0.0" width="49" height="19.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curve" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gJ-qx-7Jv">
-                                                <rect key="frame" x="0.0" y="19.5" width="45.5" height="19.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Force" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt9-Y4-IMh">
-                                                <rect key="frame" x="0.0" y="39" width="43.5" height="20"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEz-8g-gFL">
-                                                <rect key="frame" x="0.0" y="59" width="65.5" height="19.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-GB-53V">
-                                                <rect key="frame" x="0.0" y="78.5" width="42.5" height="19.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
-                                    <constraint firstItem="xhh-xV-JwA" firstAttribute="leading" secondItem="dIM-WZ-2p4" secondAttribute="leading" constant="8" id="8xy-wu-P1M"/>
-                                    <constraint firstAttribute="bottom" secondItem="xhh-xV-JwA" secondAttribute="bottom" constant="8" id="EgR-yG-brl"/>
-                                    <constraint firstItem="xhh-xV-JwA" firstAttribute="top" secondItem="dIM-WZ-2p4" secondAttribute="top" constant="8" id="aug-0o-6mv"/>
-                                    <constraint firstAttribute="trailing" secondItem="xhh-xV-JwA" secondAttribute="trailing" constant="8" id="qIx-h3-srm"/>
+                                    <constraint firstItem="f4J-jq-dBe" firstAttribute="top" secondItem="dIM-WZ-2p4" secondAttribute="top" constant="8" id="CJE-be-PXJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="f4J-jq-dBe" secondAttribute="trailing" constant="8" id="Z84-d6-ZZg"/>
+                                    <constraint firstItem="f4J-jq-dBe" firstAttribute="leading" secondItem="dIM-WZ-2p4" secondAttribute="leading" constant="8" id="ai8-UX-ROQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="f4J-jq-dBe" secondAttribute="bottom" constant="8" id="p3K-V6-Tyt"/>
                                     <constraint firstAttribute="height" constant="114" id="sks-oQ-Hjm"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -82,7 +53,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startSpringAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1i-ZE-EAs"/>
+                                    <action selector="animationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXT-19-ymB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,18 +69,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="curveLabel" destination="0gJ-qx-7Jv" id="Blj-Ob-LCD"/>
-                        <outlet property="delayLabel" destination="YXt-GB-53V" id="Hti-IN-o5w"/>
-                        <outlet property="durationLabel" destination="uEz-8g-gFL" id="gmp-SF-qe2"/>
-                        <outlet property="forceLabel" destination="lt9-Y4-IMh" id="tyf-Wi-T1H"/>
-                        <outlet property="presetLabel" destination="f4J-jq-dBe" id="xae-0r-rDb"/>
-                        <outlet property="springAnimationView" destination="dIM-WZ-2p4" id="QeR-2C-Rrb"/>
-                        <outlet property="startButton" destination="JXS-44-brY" id="LRQ-9C-67p"/>
+                        <outlet property="animationLabel" destination="f4J-jq-dBe" id="ijn-4u-O9w"/>
+                        <outlet property="animationView" destination="dIM-WZ-2p4" id="gea-Wp-9bn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="98"/>
+            <point key="canvasLocation" x="33.75" y="97.183098591549296"/>
         </scene>
     </scenes>
     <resources>

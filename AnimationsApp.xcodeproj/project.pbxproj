@@ -14,6 +14,9 @@
 		09F366F5289C44DC009779EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09F366F4289C44DC009779EF /* Assets.xcassets */; };
 		09F366F8289C44DC009779EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F366F6289C44DC009779EF /* LaunchScreen.storyboard */; };
 		09F36712289C4F51009779EF /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 09F36711289C4F51009779EF /* SpringAnimation */; };
+		09F3671728A17AF1009779EF /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 09F3670E289C4E9F009779EF /* SpringAnimation */; };
+		09F3671928A17EF8009779EF /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3671828A17EF8009779EF /* Animation.swift */; };
+		09F3671B28A1810C009779EF /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F3671A28A1810C009779EF /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,8 @@
 		09F366F4289C44DC009779EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09F366F7289C44DC009779EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09F366F9289C44DC009779EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F3671828A17EF8009779EF /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		09F3671A28A1810C009779EF /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F3671728A17AF1009779EF /* SpringAnimation in Frameworks */,
 				09F36712289C4F51009779EF /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,8 +67,10 @@
 				09F366EB289C44D6009779EF /* AppDelegate.swift */,
 				09F366ED289C44D6009779EF /* SceneDelegate.swift */,
 				09F366EF289C44D6009779EF /* ViewController.swift */,
-				09F366F1289C44D6009779EF /* Main.storyboard */,
+				09F3671828A17EF8009779EF /* Animation.swift */,
+				09F3671A28A1810C009779EF /* DataStore.swift */,
 				09F366F4289C44DC009779EF /* Assets.xcassets */,
+				09F366F1289C44D6009779EF /* Main.storyboard */,
 				09F366F6289C44DC009779EF /* LaunchScreen.storyboard */,
 				09F366F9289C44DC009779EF /* Info.plist */,
 			);
@@ -150,6 +158,8 @@
 			files = (
 				09F366F0289C44D6009779EF /* ViewController.swift in Sources */,
 				09F366EC289C44D6009779EF /* AppDelegate.swift in Sources */,
+				09F3671928A17EF8009779EF /* Animation.swift in Sources */,
+				09F3671B28A1810C009779EF /* DataStore.swift in Sources */,
 				09F366EE289C44D6009779EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
